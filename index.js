@@ -6,7 +6,7 @@ const cors = require('cors');
 require("dotenv").config();
 const app = express();
 
-const PORT = process.env.PORT ?? 8081;
+const PORT = process.env.PORT || 3000;
 const API_KEY = process.env.API_KEY;
 const BASE_URL = "http://api.weatherbit.io/v2.0/current";
 
